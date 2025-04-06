@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+.task-dragging {
+  @apply opacity-50 border-2 border-dashed border-primary;
+}
+
+.column-dragging {
+  @apply opacity-70 border-2 border-dashed border-primary;
+}
