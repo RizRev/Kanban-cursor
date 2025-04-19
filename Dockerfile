@@ -42,9 +42,9 @@ COPY --from=builder /app/node_modules/.prisma ./node_modules/.prisma
 
 USER nextjs
 
-EXPOSE 3000
+EXPOSE 3030
 
-ENV PORT 3000
+ENV PORT 3030
 
 # Start the Next.js application with database migration
 CMD npx prisma migrate deploy && node server.js 
